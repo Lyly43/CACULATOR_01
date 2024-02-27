@@ -49,7 +49,7 @@ public class CalculatorForm extends javax.swing.JFrame {
         btnCong = new javax.swing.JButton();
         btnTru = new javax.swing.JButton();
         btn0 = new javax.swing.JButton();
-        btnCham = new javax.swing.JButton();
+        btncham = new javax.swing.JButton();
         btnCan = new javax.swing.JButton();
         btnTru1 = new javax.swing.JButton();
         btnketQua = new javax.swing.JButton();
@@ -80,7 +80,7 @@ public class CalculatorForm extends javax.swing.JFrame {
         jPanel3.setLayout(new java.awt.GridLayout(4, 5, 5, 5));
 
         btn7.setBackground(new java.awt.Color(255, 102, 102));
-        btn7.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        btn7.setFont(new java.awt.Font("Segoe UI", 2, 12)); // NOI18N
         btn7.setForeground(java.awt.Color.black);
         btn7.setText("7");
         btn7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 51, 0), 3));
@@ -212,7 +212,7 @@ public class CalculatorForm extends javax.swing.JFrame {
         jPanel3.add(btn1);
 
         btn2.setBackground(new java.awt.Color(255, 102, 102));
-        btn2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        btn2.setFont(new java.awt.Font("Segoe UI", 2, 14)); // NOI18N
         btn2.setForeground(java.awt.Color.black);
         btn2.setText("2");
         btn2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 51, 0), 3));
@@ -271,20 +271,20 @@ public class CalculatorForm extends javax.swing.JFrame {
         });
         jPanel3.add(btn0);
 
-        btnCham.setBackground(new java.awt.Color(255, 102, 102));
-        btnCham.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        btnCham.setForeground(new java.awt.Color(0, 0, 0));
-        btnCham.setText(".");
-        btnCham.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 51, 0), 3));
-        btnCham.addActionListener(new java.awt.event.ActionListener() {
+        btncham.setBackground(new java.awt.Color(255, 102, 102));
+        btncham.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        btncham.setForeground(new java.awt.Color(0, 0, 0));
+        btncham.setText(".");
+        btncham.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 51, 0), 3));
+        btncham.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnChamActionPerformed(evt);
+                btnchamActionPerformed(evt);
             }
         });
-        jPanel3.add(btnCham);
+        jPanel3.add(btncham);
 
         btnCan.setBackground(new java.awt.Color(255, 102, 102));
-        btnCan.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        btnCan.setFont(new java.awt.Font("Segoe UI", 2, 14)); // NOI18N
         btnCan.setForeground(new java.awt.Color(0, 0, 0));
         btnCan.setText("sqrt");
         btnCan.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 51, 0), 3));
@@ -365,11 +365,11 @@ public class CalculatorForm extends javax.swing.JFrame {
         jTextField1.setText(jTextField1.getText() + cmd);
     }//GEN-LAST:event_btn1ActionPerformed
 
-    private void btnChamActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnChamActionPerformed
+    private void btnchamActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnchamActionPerformed
         String cmd = evt.getActionCommand();
         
         jTextField1.setText(jTextField1.getText() + cmd);
-    }//GEN-LAST:event_btnChamActionPerformed
+    }//GEN-LAST:event_btnchamActionPerformed
 
     //dao nguoc gia tri am dương
     private void btnDaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDaoActionPerformed
@@ -504,7 +504,6 @@ public class CalculatorForm extends javax.swing.JFrame {
     private javax.swing.JButton btn8;
     private javax.swing.JButton btn9;
     private javax.swing.JButton btnCan;
-    private javax.swing.JButton btnCham;
     private javax.swing.JButton btnChia;
     private javax.swing.JButton btnCong;
     private javax.swing.JButton btnDao;
@@ -512,6 +511,7 @@ public class CalculatorForm extends javax.swing.JFrame {
     private javax.swing.JButton btnTru;
     private javax.swing.JButton btnTru1;
     private javax.swing.JButton btnXoa;
+    private javax.swing.JButton btncham;
     private javax.swing.JButton btnketQua;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
